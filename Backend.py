@@ -31,8 +31,9 @@ app = FastAPI(title="SkillSync AI Backend")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",                   # Local development
-        "https://your-app.vercel.app",             # ← REPLACE with your actual Vercel URL after deploy
+        "http://localhost:3000",
+        "https://skill-sync-frontend-umber.vercel.app",  # main URL
+        "https://skillsync-backend-jtl4.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
